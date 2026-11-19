@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            font-weight: 400;
+            color: green;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+            line-height: 60px;
+        }
+        body{
+            background-color: yellow;
+        }
+        .yijihezi{
+            width: 120px;
+            margin: 54px 0 0 130px;
+        }
+        .yijiliebiao>li{
+            width: 120px;
+            height: 60px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .erjihezi{
+            position: absolute;
+            left: 120px;
+            top: 0;
+            background-color: rgb(255 255 255 / 0.8);
+            display: none;
+            white-space: nowrap; 
+        }
+        .erjihezi a{
+            color: black;
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0 15px;
+        }
+        .erjiliebiao>li{
+            display: inline-block;
+            height: 40px;
+        }
+        .yijiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+        .yijiliebiao>li:hover{
+            background-color: #bb1313;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li>
+                <a href="#">奶龙</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">大臭脚</a></li>
+                        <li><a href="#">小傲娇</a></li>
+                        <li><a href="#">小可爱</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">胖猫</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">蓝色的</a></li>
+                        <li><a href="#">小猫咪</a></li>
+                        <li><a href="#">爱吃汉堡</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">奶蛙</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">长条的</a></li>
+                        <li><a href="#">胖胖的</a></li>
+                        <li><a href="#">绿色的</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
